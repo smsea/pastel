@@ -19,8 +19,22 @@
                 max-width: 100%; /* 모바일 화면에서 이미지가 꽉 차게 표시되도록 설정 */
             }
         }
+
+        /* 모바일에 맞게 이미지 크기 조정 */
+        .image-container {
+            display: flex;
+        }
+
+        .image-container img {
+            width: 50%;
+            height: auto;
+            border: 1px solid #ccc; /* 이미지에 테두리 스타일을 추가합니다. */
+            box-sizing: border-box; /* 테두리의 두께를 요소의 크기에 포함시킵니다. */
+            margin: -1px; /* 테두리 간격을 보정합니다. */
+        }
     </style>
-    <title>Maricle Detail</title>
+    
+    <title>pastel Detail</title>
 </head>
 
 <body>
@@ -28,8 +42,10 @@
     <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_01.jpg" alt="파스텔1">
     <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_02.gif" alt="파스텔2">
     <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_03.jpg" alt="파스텔3">
-    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_04.gif" alt="파스텔4">
-    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_05.gif" alt="파스텔5">
+    <div class="image-container">
+        <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_04.gif" alt="파스텔4">
+        <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_05.gif" alt="파스텔5">
+    </div>
     <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_06.jpg" alt="파스텔6">
     <br><br><br><br><br><br>
     <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_07.jpg" alt="파스텔6">
