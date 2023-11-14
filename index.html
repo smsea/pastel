@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+      body {
+          font-family: Arial, sans-serif; /* 원하는 폰트를 선택합니다. */
+      }
         /* 모바일에 맞게 이미지 크기 조정 */
         img {
             max-width: 100%; /* 이미지의 최대 너비는 부모 요소의 100% */
@@ -35,15 +38,22 @@
             box-sizing: border-box; /* 테두리의 두께를 요소의 크기에 포함시킵니다. */
             margin: -1px; /* 테두리 간격을 보정합니다. */
         }
+       .text-container {
+            text-align: center; /* 텍스트를 가운데 정렬합니다. */
+            margin: 20px 0; /* 텍스트와 이미지 간 간격을 조절합니다. */
+       }
     </style>
     
-    <title>pastel Detail</title>
+    <title>Pastel Detail</title>
 </head>
 
 <body>
 
     <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_01.jpg" alt="파스텔1">
-    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_02.gif" alt="파스텔2">
+    <div class="text-container">
+        <p>우수한 통기성</p>
+    </div>
+    <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_02.gif" width: 860px; height: auto; alt="파스텔2">
     <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_03.jpg" alt="파스텔3">
     <div class="image-container">
         <img src="//ecimg.cafe24img.com/pg162b82901483004/damigreen/pastel/pastel_04.gif" alt="파스텔4">
