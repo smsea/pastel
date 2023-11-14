@@ -23,14 +23,17 @@
         /* 모바일에 맞게 이미지 크기 조정 */
         .image-container {
             display: flex;
+            max-width: 860px; /* 전체 가로 크기를 최대 860px로 제한합니다. */
+            margin: 0 auto; /* 가운데 정렬을 위해 자동 마진을 추가합니다. */
+            overflow: hidden; /* 가로 크기를 넘어가는 컨텐츠를 감춥니다. */
         }
 
         .image-container img {
-            width: 50%;
+            width: 100%; /* 부모 요소인 .image-container에 맞게 이미지 크기를 조정합니다. */
             height: auto;
             border: 1px solid #ccc; /* 이미지에 테두리 스타일을 추가합니다. */
             box-sizing: border-box; /* 테두리의 두께를 요소의 크기에 포함시킵니다. */
-            margin: -1px; /* 테두리 간격을 보정합니다. */
+            margin: 0px; /* 테두리 간격을 보정합니다. */
         }
     </style>
     
